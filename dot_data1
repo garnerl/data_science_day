@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Credit_History <= 0.5\ngini = 0.446\nsamples = 631\nvalue = [212, 419]", fillcolor="#399de57e"] ;
+1 [label="ApplicantIncome <= 18208.0\ngini = 0.435\nsamples = 147\nvalue = [100, 47]", fillcolor="#e5813987"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="ApplicantIncome <= 5375.0\ngini = 0.424\nsamples = 144\nvalue = [100, 44]", fillcolor="#e581398f"] ;
+1 -> 2 ;
+3 [label="gini = 0.46\nsamples = 117\nvalue = [75, 42]", fillcolor="#e5813970"] ;
+2 -> 3 ;
+4 [label="gini = 0.137\nsamples = 27\nvalue = [25, 2]", fillcolor="#e58139eb"] ;
+2 -> 4 ;
+5 [label="gini = 0.0\nsamples = 3\nvalue = [0, 3]", fillcolor="#399de5ff"] ;
+1 -> 5 ;
+6 [label="Married_Yes <= 0.5\ngini = 0.356\nsamples = 484\nvalue = [112, 372]", fillcolor="#399de5b2"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="Loan_Amount_Term <= 60.0\ngini = 0.425\nsamples = 163\nvalue = [50, 113]", fillcolor="#399de58e"] ;
+6 -> 7 ;
+8 [label="gini = 0.0\nsamples = 3\nvalue = [3, 0]", fillcolor="#e58139ff"] ;
+7 -> 8 ;
+9 [label="gini = 0.415\nsamples = 160\nvalue = [47, 113]", fillcolor="#399de595"] ;
+7 -> 9 ;
+10 [label="CoapplicantIncome <= 7541.0\ngini = 0.312\nsamples = 321\nvalue = [62, 259]", fillcolor="#399de5c2"] ;
+6 -> 10 ;
+11 [label="gini = 0.3\nsamples = 315\nvalue = [58, 257]", fillcolor="#399de5c5"] ;
+10 -> 11 ;
+12 [label="gini = 0.444\nsamples = 6\nvalue = [4, 2]", fillcolor="#e581397f"] ;
+10 -> 12 ;
+}
